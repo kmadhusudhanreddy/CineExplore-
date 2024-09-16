@@ -49,10 +49,16 @@ const Sidenav = () => {
         <h1 className="text-white font-semibold text-[15px] mt-3 mb-2 ">
           Website Information
         </h1>
-        <Link className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-1">
+        <Link
+          to="/about"
+          className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-1"
+        >
           <i className="ri-information-fill mr-1"></i> About
         </Link>
-        <Link className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-1">
+        <Link
+          to="/contact"
+          className="hover:bg-[#6556CD] hover:text-white duration-300 rounded-lg p-1"
+        >
           <i className="ri-phone-fill mr-1"></i> Contact Us
         </Link>
       </nav>

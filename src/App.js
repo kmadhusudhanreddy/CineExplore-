@@ -10,6 +10,8 @@ import Tvdetails from "./components/Tvdetails";
 import Persondetails from "./components/Persondetails";
 import Trailer from "./components/partials/Trailer";
 import Notfound from "./components/Notfound";
+import About from "./components/partials/About";
+import Contact from "./components/partials/Contact";
 function App() {
   return (
     <div className="w-screen h-screen bg-[#1F1E24] flex">
@@ -32,6 +34,11 @@ function App() {
         <Route path="/person" element={<People />} />
         <Route path="/person/details/:id" element={<Persondetails />} />
         <Route path="/*" element={<Notfound />}></Route>
+
+        {/* About */}
+
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
       </Routes>
     </div>
   );

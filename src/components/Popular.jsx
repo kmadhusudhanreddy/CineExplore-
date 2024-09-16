@@ -73,7 +73,7 @@ const Popular = () => {
         hasMore={hasMore}
         loader={<h1>Loading...</h1>}
       >
-        <Cards data={popular}></Cards>
+        <Cards data={popular} title={category}></Cards>
       </InfiniteScroll>
     </div>
   ) : (
