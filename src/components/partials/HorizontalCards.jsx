@@ -30,7 +30,10 @@ const HorizontalCards = ({ data }) => {
                 {d.title || d.name || d.original_name || d.original_title}
               </h1>
               <p className="">
-                {d.overview.slice(0, 50)}...
+                {d.overview
+                  ? d.overview.slice(0, 50)
+                  : "No description available"}
+                ...
                 <span className="text-zinc-500"> more </span>
               </p>
             </div>
